@@ -98,8 +98,6 @@ img {
 .header {
   background-color: var(--primary-light-background-color);
   border-bottom: 1px solid var(--header-line-boder-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-container {
@@ -110,6 +108,11 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
+}
+
+.site-nav > .logo.link {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .site-nav-list {
@@ -167,6 +170,7 @@ img {
 }
 
 .site-nav-list .link, .header-contacts-list .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
