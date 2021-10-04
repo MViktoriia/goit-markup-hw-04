@@ -196,13 +196,16 @@ img {
 /* Hero */
 
 .hero {
-  background-color: #C4C4C4;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #C4C4C4;
 }
 
 .hero-title {
@@ -247,22 +250,14 @@ img {
   height: 70px;
 }
 
-.features-icons-list {
-  display: flex;
-  margin-left: -30px;
-  margin-bottom: 30px;
-
-}
-
-.features-icons-item {
-  margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
-  background-color: var(--secondary-light-background-color) ;
-  border-radius: 4px;
-  height: 120px;
+.features-icon-bg {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-light-background-color) ;
 }
 
 .features-list {
@@ -370,7 +365,6 @@ img {
 .social-item {
   width: 44px;
   height: 44px;
-  
   justify-content: center;
   align-items: center;
 }
@@ -436,10 +430,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  height: 92px;
 }
 
 .clients-icon {
@@ -512,11 +505,12 @@ img {
 }
 
 .footer-social-list-title {
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-color: var(--primary-light-text-color);
-margin-bottom: 20px
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-light-text-color);
+  margin-bottom: 20px
 }
 
 .social-link-footer {
@@ -577,9 +571,12 @@ margin-bottom: 20px
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
+.portfolio-item-link {
+  display: block;
+}
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
